@@ -10,4 +10,6 @@ import com.starwars.api.models.Rebelde;
 public interface RebeldeRepository extends JpaRepository<Rebelde, Long> {
 	Rebelde findById(long idRebelde);
 	
+	
+	
 }

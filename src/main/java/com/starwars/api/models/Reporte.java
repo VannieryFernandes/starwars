@@ -21,7 +21,11 @@ public class Reporte implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="id_reporte", nullable=false)
 	private Long idReporte;
-
+	
+	@Column(name="id_rebelde", nullable=false)
+	private Long idRebelde;
+	
+	
 	public Long getIdReporte() {
 		return idReporte;
 	}
@@ -47,4 +51,13 @@ public class Reporte implements Serializable {
 	
 	public Reporte() {
 	}
+
+	public Long getIdRebelde() {
+		return idRebelde;
+	}
+
+	public void setIdRebelde(Long idRebelde) {
+		this.idRebelde = idRebelde;
+	}
+	
 }

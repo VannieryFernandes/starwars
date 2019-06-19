@@ -23,7 +23,16 @@ public class Localizacao implements Serializable {
 
 	@OneToOne
 	private Rebelde rebelde;
-
+	
+	@Column(length=45)
+	private String nomeGalaxia;
+	
+	@Column(length=45)
+	private String latitude;
+	
+	@Column(length=45)
+	private String longitude;
+	
 
 	public Localizacao() {
 	}
@@ -51,6 +60,36 @@ public class Localizacao implements Serializable {
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+
+
+	public String getNomeGalaxia() {
+		return nomeGalaxia;
+	}
+
+
+	public void setNomeGalaxia(String nomeGalaxia) {
+		this.nomeGalaxia = nomeGalaxia;
+	}
+
+
+	public String getLatitude() {
+		return latitude;
+	}
+
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+
+	public String getLongitude() {
+		return longitude;
+	}
+
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 	
 	

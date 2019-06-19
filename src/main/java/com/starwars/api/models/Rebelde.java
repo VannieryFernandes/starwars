@@ -36,7 +36,7 @@ public class Rebelde implements Serializable {
 	private String genero;
 	
 	@Column(length=45)
-	private boolean isRebelde;
+	private Boolean isRebelde;
 
 	@OneToMany(mappedBy="rebelde")
 	private List<Reporte> reportes;
